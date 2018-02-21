@@ -48,7 +48,7 @@ namespace NVorbis
                 // oops, not Ogg!
                 // we don't support any other container types yet, so error out
                 // TODO: Add Matroska fallback
-                bufferedStream.Close();
+                bufferedStream.Dispose();
                 throw new InvalidDataException("Could not determine container type!");
             }
             _containerReader = oggContainer;

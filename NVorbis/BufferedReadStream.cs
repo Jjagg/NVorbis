@@ -69,7 +69,7 @@ namespace NVorbis
 
                 if (CloseBaseStream)
                 {
-                    _baseStream.Close();
+                    _baseStream.Dispose();
                 }
             }
         }
